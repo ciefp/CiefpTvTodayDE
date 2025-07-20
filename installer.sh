@@ -1,17 +1,17 @@
 #!/bin/bash
-##setup command=wget -q "--no-check-certificate" https://raw.githubusercontent.com/ciefp/CiefpTvProgramSK/main/installer.sh -O - | /bin/sh
+##setup command=wget -q "--no-check-certificate" https://raw.githubusercontent.com/ciefp/CiefpTvTodayDE/main/installer.sh -O - | /bin/sh
 
 ######### Only This 2 lines to edit with new version ######
 version='1.1'
 changelog='\nFix little bugs\nUpdated Picons List'
 ##############################################################
 
-TMPPATH=/tmp/CiefpTvProgramSK
+TMPPATH=/tmp/CiefpTvTodayDE
 
 if [ ! -d /usr/lib64 ]; then
-	PLUGINPATH=/usr/lib/enigma2/python/Plugins/Extensions/CiefpTvProgramSK
+	PLUGINPATH=/usr/lib/enigma2/python/Plugins/Extensions/CiefpTvTodayDE
 else
-	PLUGINPATH=/usr/lib64/enigma2/python/Plugins/Extensions/CiefpTvProgramSK
+	PLUGINPATH=/usr/lib64/enigma2/python/Plugins/Extensions/CiefpTvTodayDE
 fi
 
 # check depends packges
@@ -77,9 +77,9 @@ else
    echo ""
    echo ""
 fi
-   wget https://github.com/ciefp/CiefpTvProgramSK/archive/refs/heads/main.tar.gz
+   wget https://github.com/ciefp/CiefpTvTodayDE/archive/refs/heads/main.tar.gz
    tar -xzf main.tar.gz
-   cp -r 'CiefpTvProgramSK-main/usr' '/'
+   cp -r 'CiefpTvTodayDE-main/usr' '/'
 set +e
 cd
 sleep 2
@@ -95,7 +95,7 @@ sync
 echo ""
 echo ""
 echo "#########################################################"
-echo "#         CiefpTvProgramSK INSTALLED SUCCESSFULLY       #"
+echo "#         CiefpTvTodayDE INSTALLED SUCCESSFULLY         #"
 echo "#                  developed by ciefp                   #"
 echo "#                   Big thanks Qu4k3                    #"
 echo "#                  .::ciefpsettings::.                  #"
